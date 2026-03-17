@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "text": "学英语",
+      "done": false,
+      "plan_date": "2026-03-19"
+    },
+    {
+      "text": "刷题",
+      "done": false,
+      "plan_date": "2026-03-19"
+    },
+    {
+      "text": "背八股",
+      "done": false,
+      "plan_date": "2026-03-19"
+    },
+    {
+      "text": "agent项目",
+      "done": false,
+      "plan_date": "2026-03-19"
+    }
+  ]
+}
