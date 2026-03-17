@@ -2,6 +2,12 @@
 
 一个本地运行、跨平台的桌面 Todo 应用，主打简洁暗色 UI + 启动粒子动画。
 
+## 演示效果
+
+> GitHub 首页会直接显示这个 GIF
+
+![Demo](assets/demo.gif)
+
 ## 功能概览
 
 - `今日 / 明日` 大按钮切换（默认显示今日）
@@ -105,6 +111,16 @@ python assets/generate_icon.py
 
 - `assets/todo.ico`
 
+### 生成演示 GIF（可上传到 GitHub 展示）
+
+```bash
+python assets/generate_demo_gif.py
+```
+
+输出：
+
+- `assets/demo.gif`
+
 ### 打包为 exe
 
 ```powershell
@@ -132,4 +148,5 @@ python assets/generate_icon.py
 - 图标未刷新：按 `F5` 刷新桌面，必要时重启资源管理器
 - 启动失败：查看项目根目录 `run.log`
 - 任务丢失：检查 `data/tasks.json` 是否被外部清理
+- 演示图不更新：替换 `assets/demo.gif` 后，重新 push 到 GitHub
 
