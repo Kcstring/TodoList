@@ -2,7 +2,21 @@
 
 一个本地运行、跨平台的桌面 Todo 应用，主打简洁暗色 UI + 启动粒子动画。
 
-## 演示效果
+## Product Overview
+
+Tomorrow Todo 是一个“今天执行、明天规划”的桌面待办工具，设计目标是：
+
+- 视觉克制：深色粒子风格，弱干扰
+- 操作直接：打开即用，默认进入“今日”
+- 本地可靠：JSON 落盘，不依赖云服务
+
+## UI Showcase
+
+### 1) 界面静态预览（GitHub 首页）
+
+![UI Showcase](assets/ui-showcase.png)
+
+### 2) 动态演示（启动动效）
 
 > GitHub 首页会直接显示这个 GIF
 
@@ -10,7 +24,7 @@
 
 ## 功能概览
 
-- `今日 / 明日` 大按钮切换（默认显示今日）
+- `今日 / 明日` 醒目切换按钮（默认显示今日）
 - 任务新增、勾选完成、删除已完成、全部重置
 - 本地 JSON 持久化（无服务器依赖）
 - 启动动画（点展开 -> 旋转 -> 放大过渡）
@@ -111,6 +125,16 @@ python assets/generate_icon.py
 
 - `assets/todo.ico`
 
+### 生成 UI 展示图（README 头图）
+
+```bash
+python assets/generate_ui_showcase.py
+```
+
+输出：
+
+- `assets/ui-showcase.png`
+
 ### 生成演示 GIF（可上传到 GitHub 展示）
 
 ```bash
@@ -149,4 +173,10 @@ python assets/generate_demo_gif.py
 - 启动失败：查看项目根目录 `run.log`
 - 任务丢失：检查 `data/tasks.json` 是否被外部清理
 - 演示图不更新：替换 `assets/demo.gif` 后，重新 push 到 GitHub
+
+## Roadmap
+
+- [ ] 增加真实录屏版 UI Demo（替换示例 GIF）
+- [ ] 增加提醒通知（到点提示）
+- [ ] 增加任务优先级与筛选
 
